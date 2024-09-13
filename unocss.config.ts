@@ -16,6 +16,7 @@ export default defineConfig({
       patterns: [
         './company/**/*.html', 
         './template/**/*.html',
+        './libs/scripts/*.js'
       ],
       outFile: 'style.build.css',
     }, 
@@ -97,7 +98,8 @@ export default defineConfig({
     {
       'btn': 'px-6 py-1 tracking-wider font-700 inline-block cursor-pointer !outline-none  disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50',
       'btn-primary': 'bg-cool text-white hover:bg-cool-800',
-      'btn-normal': 'bg-true-gray-100 text-[#104152] hover:bg-cool-800',
+      'btn-normal': 'bg-true-gray-100 text-[#104152] hover:bg-cool',
+      'btn-ghost': 'bg-true-gray-100 text-[#104152] border-cool border-2px',
       'title-1': 'font-600 text-[2rem] md:text-[3.9rem] tracking-[-0.01em]',
       'title-3': 'font-600 text-xl md:text-2xl tracking-[-0.025em]',
       'article-para': 'flex flex-col gap-3 md:gap-0',

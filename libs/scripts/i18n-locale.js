@@ -9,6 +9,9 @@ const i18nLocale = {
       register: 'Register',
       signIn: 'Sign In'
     },
+    company: {
+      contactUs: 'Contact Us'
+    },
     button: {
       home: 'Home'
     }
@@ -16,7 +19,7 @@ const i18nLocale = {
   ar: {
    
   },
-  cn: {
+  zh: {
     header: {
       trading: '交易',
       markets: '市场',
@@ -25,6 +28,9 @@ const i18nLocale = {
       partnership: '伙伴',
       register: '注册',
       signIn: '登录'
+    },
+    company: {
+      contactUs: '联系我们'
     },
     button: {
       home: '首页'

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset@0.x.x/tailwind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos/dist/aos.css">
+  <link rel="stylesheet" href="/libs/styles/font.css">
+  <link rel="stylesheet" href="/libs/styles/main.css">
+  <link rel="stylesheet" href="/style.build.css">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/vue@3.x.x/dist/vue.global.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/vue-i18n@10.x.x/dist/vue-i18n.global.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos/dist/aos.js"></script>
+  <script src="/libs/scripts/i18n-locale.js"></script>
+  <script defer src="/libs/scripts/main.js"></script>
+  <title>GVD</title>
+
+</head>
+
+<body class="font-poppins text-black" id="app">
+  <div id="the-header"></div>
+  <div class="the-align-container">
+    <h1 class="title-1 text-center pt-48 mb-5">{{ $t('company.contactUs') }}</h1>
+    <ul class="text-[1.4rem] line-height-[1.65] tracking-[-0.0em] op-30 font-500  text-center mb-136">
+      <li class="text-center w-234 mx-auto">
+        GVD Markets will wholeheartedly provide you with a full range of trading services 
+      to ensure that all your doubts can be answered accurately at any time.
+      </li>
+      <li class="text-center w-244 mx-auto">
+        We are committed to providing the best user experience possible!
+      </li>
+    </ul>
+    <div class="flex justify-end gap-2 mb-16">
+      <div class="flex flex-col items-center justify-center w-62.5 h-29.5 bg-cool bg-op-80">
+        <img src="/libs/images/icon-lang.png" alt="">
+        <p class="text-xl font-500">Online consultation</p>
+      </div>
+      <div class="flex flex-col items-center justify-center w-62.5 h-29.5 bg-cool bg-op-80">
+        <img src="/libs/images/icon-lang.png" alt="">
+        <p class="text-xl font-500">Phone Contact</p>
+      </div>
+      <div class="flex flex-col items-center justify-center w-62.5 h-29.5 bg-cool bg-op-80">
+        <img src="/libs/images/icon-lang.png" alt="">
+        <p class="text-xl font-500">Email Contact</p>
+      </div>
+    </div>
+  </div>
+  <div id="the-footer"></div>
+</body>
+
+</html>
