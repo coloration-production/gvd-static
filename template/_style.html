@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<style>
+@font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-BlackItalic.ttf');
+  font-weight: 900;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-ExtraBoldItalic.ttf');
+  font-weight: 800;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-SemiBoldItalic.ttf');
+  font-weight: 600;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-MediumItalic.ttf');
+  font-weight: 500;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+/* 
+@font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+} */
+
+
+@font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-LightItalic.ttf');
+  font-weight: 300;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-ExtraLight.ttf');
+  font-weight: 200;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-ExtraLightItalic.ttf');
+  font-weight: 200;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-thin.ttf');
+  font-weight: 100;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: poppins;
+  src: url('/libs/fonts/Poppins-thinItalic.ttf');
+  font-weight: 100;
+  font-style: italic;
+} */
+
+
+html,
+body,
+#app {
+  @apply font-poppins text-black ;
+
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  background: #121212;
+  color-scheme: dark;
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: rgb(13, 148, 136);
+  opacity: 0.75;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.btn {
+  @apply px-6 py-1 tracking-wider font-700 inline-block cursor-pointer !outline-none  disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
+}
+
+.btn.btn-primary {
+  @apply bg-cool text-white hover:bg-cool-800;
+}
+
+.btn.btn-normal {
+  @apply bg-true-gray-100 text-[#104152] hover:bg-cool-800;
+}
+   
+.btn.btn-ghost {
+  @apply bg-true-gray-100 text-[#104152] border-cool border-2px hover:bg-cool-800;
+}
+   
+.title-1 {
+  @apply font-600 text-[3.9rem] tracking-[-0.01em];
+}
+
+.title-3 {
+  @apply font-600 text-xl md:text-2xl tracking-[-0.025em];
+}
+
+.title-sub {
+  @apply;
+}
+
+.article-para {
+  @apply flex flex-col gap-3 md:gap-0 ;
+}
+
+.article-text {
+  @apply font-500 md:text-lg tracking-[0.006em] line-height-[1.6] md:line-height-7.8 hyphens-auto;
+}
+
+.the-align-container {
+  @apply
+    max-w-[1200px]
+    mx-auto
+    relative
+  ;
+}
+
+</style>
+</body>
+</html>

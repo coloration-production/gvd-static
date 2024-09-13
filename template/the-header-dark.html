@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css">
+  <link rel="stylesheet" href="/libs/styles/font.css">
+  <link rel="stylesheet" href="/libs/styles/main.css">
+  <link rel="stylesheet" href="/style.build.css">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs-i18n@2.x.x/dist/cdn.min.js"></script>
+  <script src="/libs/scripts/i18n-locale.js"></script>
+  <script src="/libs/scripts/i18n.js"></script>
+  <title>GVD</title>
+</head>
+
+<body class="font-poppins text-white">
+  <div x-data="i18n" class="group hidden md:block pt-[0.7rem] absolute top-0 left-0 w-full z-10">
+    <!-- -->
+    <!-- <div class="bg-cool h-4 flex items-center justify-center text-xs tracking-wider text-white">Trading better than ever</div> -->
+    <div class="the-align-container flex justify-between items-center h-24">
+      <a to="/" :title="$t('button.home')" class="mr-14">
+        <!-- <div class="bg-blue w-62 h-full">123</div> -->
+        <img class=" w-62" src="/libs/images/logo.png" alt="">
+      </a>
+      
+      <nav class="tracking-[-0.02em] flex-1 flex gap-1 h-full">
+        <a class="the-header-nav-btn" to="/" x-text="$t('header.trading')">Trading</a>
+        <a class="the-header-nav-btn" to="/" x-text="$t('header.markets')">Markets</a>
+        <a class="the-header-nav-btn" to="/" x-text="$t('header.tools')">Tools</a>
+        <a class="the-header-nav-btn" to="/" x-text="$t('header.company')">Company</a>
+        <a class="the-header-nav-btn" to="/" x-text="$t('header.partnership')">Partnership</a>
+       <!--  <a to="/">Home</a>
+        <a :active-match-level="1" to="/hi/miemiemie">{{ t('intro.hi') }}</a>
+        <a :active-match-level="1" to="/demo-scroll">{{ t('header.scroll') }}</a>
+        <a :active-match-level="1" to="/demo-markdown">{{ t('header.markdown') }}</a>
+        -->
+      </nav> 
+      <div class="flex gap-4 pr-7">
+        <div class="btn btn-primary" x-text="$t('header.register')">Register</div>
+        <div class="btn btn-normal" x-text="$t('header.signIn')">Sign In</div>
+      </div>
+
+      <div class="flex items-center justify-end h-full gap-5">
+        <a :title="t('button.toggle_langs')" @click="toggleLocales()">
+          <img src="/libs/images/icon-shop.png" class="w-6" alt="">
+        </a>
+
+        <a class="flex items-center gap-1" :title="$t('button.toggle_dark')" @click="toggleDark()">
+          <img src="/libs/images/icon-lang.png" class="w-6" alt=""> 
+          <span class="font-600 text-sm uppercase" x-text="locale" @click="changeLang(locale === 'en' ? 'cn' : 'en')"></span>
+        </a>
+      </div>
+
+    </div>
+    <div class="left-0 top-full h-30 bg-green-200 absolute w-full z-10 hidden group-hover:block">
+      <div class="the-align-container ">
+        <div class="flex gap-4">
+          <a to="/company/aboutgvd">About GVD</a>
+          <a to="/company/brand-milestones">Brand Milestones</a>
+          <a to="/company/career">Career</a>
+          <a to="/company/contact-us">Contact Us</a>
+          <a to="/company/faq">FAQ</a>
+          <a to="/company/honors-and-awards">Honors & Awards</a>
+          <a to="/company/legal-notices">Legal Notices</a>
+          <a to="/company/partnership">Partnership</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

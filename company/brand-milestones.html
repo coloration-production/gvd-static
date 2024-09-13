@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/unocss.min.css">
+  <link rel="stylesheet" href="/libs/styles/font.css">
+  <link rel="stylesheet" href="/libs/styles/main.css">
+  <link rel="stylesheet" href="/style.build.css">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs-i18n@2.x.x/dist/cdn.min.js"></script>
+  <script src="/libs/scripts/i18n-locale.js"></script>
+  <script src="/libs/scripts/i18n.js"></script>
+  <title>GVD</title>
+
+</head>
+
+<body class="font-poppins text-black">
+  <iframe src="/template/the-header-dark.html" class="absolute z-10 w-full h-50 overflow-hidden" frameborder="0" scrolling="no"></iframe>
+  <div class="min-h-[0vh]">
+    <div class="pt-24 bg-no-repeat bg-bottom bg-black bg-cover md:bg-contain" style="background-image:url('/libs/images/brand-milestones-cover.png')">
+      <div class="the-align-container">
+        <h1 class="md:title-1 text-white text-center pt-20 pb-40 md:pt-55 md:pb-102 tracking-[0.01em]!">Brand Milestones</h1>
+      </div>
+    </div>
+    <div class="the-align-container bg-[#f8f8f8] mb-8 md:mb-20 pb-8">
+      <div class="px-2 md:px-4">
+        <div class="md:flex md:h-15 items-center">
+          <div class="flex items-center text-[.9em] px-.5 text-[#a0a0a0] text-nowrap  h-10">Select category</div>
+          <div class=" h-15 flex items-center gap-4  md:pl-10 *:p-1! md:*:px-4!  *:font-400! *:text-[.9em] *:text-center *:h-7 *:flex *:items-center *:justify-center">
+            <div class="btn">All</div>
+            <div class="btn">Brand</div>
+            <div class="btn btn-primary">Promotions</div>
+            <div class="btn">PR</div>
+            <div class="btn">CSR</div>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-4 grid-cols-2 gap-4" x-data="{ items: [1, 2, 3, 4, 5, 6, 7, 8]}">
+          <template  x-for="item in items">
+
+          
+          <div>
+            <img class="mb-3 w-auto" src="/libs/images/demo-cover.png" alt="">
+            <div class="flex justify-between mb-2">
+              <div class="text-[.8em] tracking-[-0.025em]">15 AUOUST 2024</div>
+              <div class="text-cool text-[.8em] pr-1">NEWS</div>
+            </div>
+            <div class="text-[.8em] line-height-[1.2rem] mb-4">New Zealand dollar falls as Reserve Bank of New Zealand cuts interest rates</div>
+            <div class="flex justify-between items-end mb-2">
+              <a href="">
+                <div class="btn bg-black text-white font-400! text-[.9em] tracking-[-0.01em]! py-1.2! px-4!">Read more</div>
+              </a>
+              <a href="">
+                <img class="w-5 mb-1 mr-1" src="/libs/images/icon-headset.png" alt="">
+              </a>
+            </div>
+          </div>
+        </template>
+        </div>
+      </div>
+    </div>
+  </div>
+  <iframe src="/template/the-footer.html" class="w-full h-70 overflow-hidden" frameborder="0" scrolling="no"></iframe>
+
+
+  
+</body>
+
+</html>
