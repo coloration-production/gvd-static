@@ -108,6 +108,8 @@ export default defineConfig({
     {
       'the-header-nav-btn': 'flex items-center cursor-pointer px-4.2 h-full hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black',
       'the-footer-divider': 'w-full h-1px my-4 md:my-0 md:w-1px md:h-53 bg-gradient-to-r md:bg-gradient-to-b bg-gradient-from-transparent bg-gradient-to-transparent bg-gradient-via-bluegray',
+      'the-footer-frame': 'w-full h-300 md:h-80 overflow-hidden',
+      'the-header-frame': 'absolute z-10 w-full h-50 overflow-hidden'
     }
   ],
   presets: [

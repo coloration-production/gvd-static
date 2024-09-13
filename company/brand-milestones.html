@@ -7,27 +7,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/unocss.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos/dist/aos.css">
   <link rel="stylesheet" href="/libs/styles/font.css">
   <link rel="stylesheet" href="/libs/styles/main.css">
   <link rel="stylesheet" href="/style.build.css">
   
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs-i18n@2.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos/dist/aos.js"></script>
   <script src="/libs/scripts/i18n-locale.js"></script>
   <script src="/libs/scripts/i18n.js"></script>
+  <script defer src="/libs/scripts/main.js"></script>
   <title>GVD</title>
 
 </head>
 
 <body class="font-poppins text-black">
-  <iframe src="/template/the-header-dark.html" class="absolute z-10 w-full h-50 overflow-hidden" frameborder="0" scrolling="no"></iframe>
-  <div class="min-h-[0vh]">
+  <iframe src="/template/the-header-dark.html" class="the-header-frame" frameborder="0" scrolling="no"></iframe>
+  <div>
     <div class="pt-24 bg-no-repeat bg-bottom bg-black bg-cover md:bg-contain" style="background-image:url('/libs/images/brand-milestones-cover.png')">
       <div class="the-align-container">
-        <h1 class="md:title-1 text-white text-center pt-20 pb-40 md:pt-55 md:pb-102 tracking-[0.01em]!">Brand Milestones</h1>
+        <h1 data-aos="fade-up" class="md:title-1 text-white text-center pt-20 pb-40 md:pt-55 md:pb-102 tracking-[0.01em]!">Brand Milestones</h1>
       </div>
     </div>
-    <div class="the-align-container bg-[#f8f8f8] mb-8 md:mb-20 pb-8">
+    <div  data-aos="fade-up"  data-aos-delay="300" class="the-align-container bg-[#f8f8f8] mb-8 md:mb-20 pb-8">
       <div class="px-2 md:px-4">
         <div class="md:flex md:h-15 items-center">
           <div class="flex items-center text-[.9em] px-.5 text-[#a0a0a0] text-nowrap  h-10">Select category</div>
@@ -64,7 +67,7 @@
       </div>
     </div>
   </div>
-  <iframe src="/template/the-footer.html" class="w-full h-70 overflow-hidden" frameborder="0" scrolling="no"></iframe>
+  <iframe src="/template/the-footer.html" class="the-footer-frame" frameborder="0" scrolling="no"></iframe>
 
 
   
